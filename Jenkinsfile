@@ -1,4 +1,3 @@
-cat << 'EOF' > Jenkinsfile
 pipeline {
     agent any
 
@@ -8,14 +7,14 @@ pipeline {
                 echo 'Descargando el código fuente desde GitHub...'
             }
         }
-
+        
         stage('Fase 2: Compilación / Build') {
             steps {
                 echo 'Compilando el proyecto y preparando dependencias...'
                 sh 'echo "Proyecto compilado con éxito."'
             }
         }
-
+        
         stage('Fase 3: Pruebas / Test') {
             steps {
                 echo 'Ejecutando pruebas unitarias automatizadas...'
@@ -24,4 +23,3 @@ pipeline {
         }
     }
 }
-EOF
