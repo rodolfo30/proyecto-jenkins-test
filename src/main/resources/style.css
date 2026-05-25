@@ -1,0 +1,82 @@
+/* Configuración General */
+.root {
+    -fx-font-family: "Segoe UI", system-ui, sans-serif;
+    -fx-base: #1e272e;
+    -fx-background-color: #1e272e;
+    -fx-font-size: 14px;
+}
+
+/* Títulos y Etiquetas */
+.label {
+    -fx-text-fill: #d2dae2;
+    -fx-font-weight: bold;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #d4af37;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Campos de texto y Combos */
+.text-field, .password-field, .combo-box, .date-picker {
+    -fx-background-color: #2f3640;
+    -fx-text-fill: white;
+    -fx-border-color: #485460;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8;
+    -fx-min-height: 40;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #d4af37;
+}
+
+/* Botones Profesionales */
+.button {
+    -fx-background-radius: 5;
+    -fx-padding: 10 20;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-min-height: 40;
+}
+
+.button-primary {
+    -fx-background-color: linear-gradient(to bottom, #d4af37, #b8860b);
+    -fx-text-fill: #1a252f;
+}
+
+.button-primary:hover {
+    -fx-background-color: #f1c40f;
+}
+
+.button-secondary {
+    -fx-background-color: #485460;
+    -fx-text-fill: white;
+}
+
+.button-danger {
+    -fx-background-color: #eb4d4b;
+    -fx-text-fill: white;
+}
+
+/* Tabla de Citas */
+.table-view {
+    -fx-background-color: #2f3640;
+    -fx-border-color: #d4af37;
+    -fx-border-width: 0.5;
+}
+
+.table-view .column-header {
+    -fx-background-color: #d4af37;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #1e272e;
+    -fx-font-size: 15px;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #485460;
+}
